@@ -13,7 +13,7 @@ def askFolder():
 
 # Read input parameter
 inputs = u.readInputFile("data.main", inputs = ["jumpWeight", "minJump"],
-                       optionalInputs = ["plotFits", nPointsSmooth])
+                       optionalInputs = ["plotFits", "nPointsSmooth"])
 
 jumpWeight = inputs["jumpWeight"]
 minJump = inputs["minJump"]
@@ -39,7 +39,7 @@ for file in files:
         print(file)
 
         # Fit the intensity of the file
-        params, intensity = SWF.fitParticle(folder, file, jumpWeight = jumpWeight, minJump = minJump)
+        params, intensity = SWF.fitParticle(folder, filename = file, jumpWeight = jumpWeight, minJump = minJump)
 
         #Write the parameters to a file
         paramsFile.write(" ".join(u.ntos(params))+"\n")
