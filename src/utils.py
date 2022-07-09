@@ -91,3 +91,10 @@ def ntos(lista, ndecs=2):
           else:
                lista2+=[str(elem)]
      return lista2
+
+def stof(lista):
+     Lista2=[]
+     for elem in lista:
+          Lista2+=[float(elem)]
+     return Lista2
+
