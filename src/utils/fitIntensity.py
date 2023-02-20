@@ -1,5 +1,5 @@
-import sys
-sys.path.insert(0, '../fitSquareWave')
+import sys, os
+sys.path.append(os.path.join(os.path.dirname(__file__), '..', 'fitSquareWave'))
 import squareWaveFit as SWF
 import scientificPlot as splt
 import utils as u
