@@ -2,3 +2,4 @@ jumpWeight 750
 minJump 3
 plotFits 1
 nPointsSmooth 1
+minDuration 3
